@@ -18,7 +18,7 @@ async function getUserStats(msg, username) {
         let games = await api.Match.listWithDetails(
             puuid,
             Constants.RegionGroups.EUROPE,
-            { count: process.env.PREFIX === 't!' ? 20 : 20 }
+            { count: process.env.PREFIX === 't!' ? 5 : 20 }
         );
         games = games.filter(
             g => g.info.tft_set_number === 6 && g.info.queue_id === 1100
