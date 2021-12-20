@@ -139,6 +139,10 @@ async function getUserStats(msg, username) {
             )
             .setImage(placementsGraph)
             .setImage('attachment://chart.jpeg')
+            .setFooter(
+                'https://github.com/Kerberos9/tft-kb',
+                'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+            )
             .setColor(11167487)
             .addFields([
                 {
@@ -262,35 +266,30 @@ function attachGraphImage(imgUrl) {
 }
 
 async function userNotFoundResponse(msg, username) {
-    const embed = new MessageEmbed().setTitle(`User ${username} not found.`);
-    await msg.channel.send({
-        embeds: [embed]
-    });
+    sendErrorMessage(msg, `User ${username} not found.`);
 }
 
 async function userHasNoGamesResponse(msg, username) {
-    const embed = new MessageEmbed().setTitle(
+    sendErrorMessage(
+        msg,
         `User ${username} has no games in the current TFT set.`
     );
-    await msg.channel.send({
-        embeds: [embed]
-    });
 }
 
 async function rateLimitResponse(msg, username) {
-    const embed = new MessageEmbed().setTitle(`Too many requests, wait a bit.`);
-    await msg.channel.send({
-        embeds: [embed]
-    });
+    sendErrorMessage(msg, `Too many requests, wait a bit.`);
 }
 
 async function unknownErrorResponse(msg, username, error) {
     console.error(error);
-    const embed = new MessageEmbed().setTitle(`Unknown error`);
+    sendErrorMessage(msg, `Unknown error`);
+}
+
+async function sendErrorMessage(msg, message) {
+    const embed = new MessageEmbed().setTitle(message);
     await msg.channel.send({
         embeds: [embed]
     });
 }
-
 getAverage = data => data.reduce((a, b) => a + b, 0) / data.length;
 module.exports = getUserStats;
