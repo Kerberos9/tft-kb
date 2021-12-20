@@ -18,7 +18,9 @@ async function getUserStats(msg, username) {
             puuid,
             Constants.RegionGroups.EUROPE
         );
-        games = games.filter(g => g.info.tft_set_number === 6);
+        games = games.filter(
+            g => g.info.tft_set_number === 6 && g.info.queue_id === 1100
+        );
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
         games = games.reverse();
@@ -70,11 +72,11 @@ async function getUserStats(msg, username) {
             rounds.push(stats.last_round);
             damageToPlayers.push(stats.total_damage_to_players);
         });
-        let placementsAverage = getAverage(placements);
-        let goldAverage = getAverage(gold);
-        let levelsAverage = getAverage(levels);
-        let roundsAverage = getAverage(rounds);
-        let damageToPlayersAverage = getAverage(damageToPlayers);
+        let placementsAverage = getAverage(placements).toFixed(2);
+        let goldAverage = getAverage(gold).toFixed(2);
+        let levelsAverage = getAverage(levels).toFixed(2);
+        let roundsAverage = getAverage(rounds).toFixed(2);
+        let damageToPlayersAverage = getAverage(damageToPlayers).toFixed(2);
         // Placements graph
         const placementsGraph = await new ChartJsImage()
             .setConfig({
@@ -101,7 +103,7 @@ async function getUserStats(msg, username) {
                     },
                     title: {
                         display: true,
-                        text: 'Last 20 games',
+                        text: `Last ${games.length} games`,
                         fontSize: 20
                     },
                     legend: {
