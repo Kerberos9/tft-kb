@@ -234,11 +234,8 @@ function sortItems(items) {
         let itemData = itemsData.items
             .filter(i => i.id === Number.parseInt(item[0]))
             .at(-1);
-        console.log({ itemData });
-        console.log({ item });
         objSorted[itemData.name] = item[1];
     });
-    console.log(objSorted);
     return objSorted;
 }
 
@@ -288,7 +285,7 @@ async function rateLimitResponse(msg, username) {
 }
 
 async function unknownErrorResponse(msg, username, error) {
-    console.log(error);
+    console.error(error);
     const embed = new MessageEmbed().setTitle(`Unknown error`);
     await msg.channel.send({
         embeds: [embed]
