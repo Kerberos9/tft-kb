@@ -143,7 +143,11 @@ async function getUserStats(msg, username) {
     traits = sortTraits(traits);
 
     const embed = new MessageEmbed()
-        .setTitle(`**TEST** TFT Stats for ${username}`)
+        .setTitle(
+            `${
+                process.env.PREFIX === 'tft!' ? '' : '**TEST** '
+            }TFT Stats for ${username}`
+        )
         .setImage(placementsGraph)
         .setImage('attachment://chart.jpeg')
         .setColor(11167487)
