@@ -1,0 +1,2196 @@
+{
+    "items": [
+        {
+            "id": 1046,
+            "name": "Chalice"
+        },
+        {
+            "id": 1014,
+            "name": "Shojin"
+        },
+        {
+            "id": 1044,
+            "name": "Very Dark Blue Buff"
+        },
+        {
+            "id": 1017,
+            "name": "Zeke's"
+        },
+        {
+            "id": 1056,
+            "name": "Stoneplate"
+        },
+        {
+            "id": 1055,
+            "name": "Bramble"
+        },
+        {
+            "id": 1033,
+            "name": "Deathcap"
+        },
+        {
+            "id": 1008,
+            "name": "Shadow Spatula"
+        },
+        {
+            "id": 1006,
+            "name": "Shadow Cloak"
+        },
+        {
+            "id": 1024,
+            "name": "Statikk Stiletto"
+        },
+        {
+            "id": 1047,
+            "name": "Sacrificial Redemption"
+        },
+        {
+            "id": 1069,
+            "name": "Caustic Quicksilver"
+        },
+        {
+            "id": 1002,
+            "name": "Shadow Bow"
+        },
+        {
+            "id": 1035,
+            "name": "Locket of the Silver Lunari"
+        },
+        {
+            "id": 1049,
+            "name": "Hand of Vengeance"
+        },
+        {
+            "id": 1067,
+            "name": "Turbulent Zephyr"
+        },
+        {
+            "id": 1019,
+            "name": "Sacrificial Infinity Edge"
+        },
+        {
+            "id": 1066,
+            "name": "Refracted Dragon's Claw"
+        },
+        {
+            "id": 1029,
+            "name": "Final Whisper"
+        },
+        {
+            "id": 1034,
+            "name": "Archdemon's Staff Of Immortality"
+        },
+        {
+            "id": 1039,
+            "name": "Sacrificial Gauntlet"
+        },
+        {
+            "id": 1016,
+            "name": "Riskthirster"
+        },
+        {
+            "id": 1007,
+            "name": "Shadow Belt"
+        },
+        {
+            "id": 1011,
+            "name": "Caustic Deathblade"
+        },
+        {
+            "id": 1099,
+            "name": "Trickster's Gloves"
+        },
+        {
+            "id": 1022,
+            "name": "Rapid Deathcannon"
+        },
+        {
+            "id": 1003,
+            "name": "Shadow Rod"
+        },
+        {
+            "id": 1025,
+            "name": "Titan's Revenge"
+        },
+        {
+            "id": 1045,
+            "name": "Frozen Dark Heart"
+        },
+        {
+            "id": 1036,
+            "name": "Ionic Dark-Spark"
+        },
+        {
+            "id": 1057,
+            "name": "Eclipse Cape"
+        },
+        {
+            "id": 1059,
+            "name": "Dark Shroud of Stillness"
+        },
+        {
+            "id": 1026,
+            "name": "Runaan's Untamed Hurricane "
+        },
+        {
+            "id": 1088,
+            "name": "Force of Darkness"
+        },
+        {
+            "id": 1015,
+            "name": "Fallen Guardian Angel"
+        },
+        {
+            "id": 1005,
+            "name": "Shadow Vest"
+        },
+        {
+            "id": 1004,
+            "name": "Shadow Tear"
+        },
+        {
+            "id": 1009,
+            "name": "Shadow Gloves"
+        },
+        {
+            "id": 1012,
+            "name": "Spectral Giantslayer"
+        },
+        {
+            "id": 1027,
+            "name": "Unstable Zz'Rot Portal"
+        },
+        {
+            "id": 555,
+            "name": "tft_item_name_RadiantSpatula"
+        },
+        {
+            "id": 1077,
+            "name": "Warmog's Sacrificial Armor"
+        },
+        {
+            "id": 1013,
+            "name": "Hextech Gunblade Of Immortality"
+        },
+        {
+            "id": 1079,
+            "name": "Banshee's Claw"
+        },
+        {
+            "id": 1023,
+            "name": "Guinsoo's Sacrificial Rageblade"
+        },
+        {
+            "id": 1037,
+            "name": "Mor-evil-lonomicon"
+        },
+        {
+            "id": 1001,
+            "name": "Shadow Sword"
+        },
+        {
+            "id": 2056,
+            "name": "Dvarapala Stoneplate"
+        },
+        {
+            "id": 2025,
+            "name": "Titan's Vow"
+        },
+        {
+            "id": 2037,
+            "name": "More More-ellonomicon"
+        },
+        {
+            "id": 2019,
+            "name": "Zenith Edge"
+        },
+        {
+            "id": 2047,
+            "name": "Radiant Redemption"
+        },
+        {
+            "id": 2044,
+            "name": "Blue Blessing"
+        },
+        {
+            "id": 2015,
+            "name": "Guardian Archangel"
+        },
+        {
+            "id": 2014,
+            "name": "Spear of Hirana"
+        },
+        {
+            "id": 2077,
+            "name": "Warmog's Pride"
+        },
+        {
+            "id": 2055,
+            "name": "Rosethorn Vest"
+        },
+        {
+            "id": 2079,
+            "name": "Banshee's Silence"
+        },
+        {
+            "id": 2026,
+            "name": "Runaan's Tempest"
+        },
+        {
+            "id": 2057,
+            "name": "Sunlight Cape"
+        },
+        {
+            "id": 2016,
+            "name": "Blessed Bloodthirster"
+        },
+        {
+            "id": 2059,
+            "name": "Shroud of Reverence"
+        },
+        {
+            "id": 2069,
+            "name": "Quickestsilver"
+        },
+        {
+            "id": 2036,
+            "name": "Covalent Spark"
+        },
+        {
+            "id": 2013,
+            "name": "Hextech Lifeblade"
+        },
+        {
+            "id": 2024,
+            "name": "Statikk's Favor"
+        },
+        {
+            "id": 2046,
+            "name": "Chalice of Charity"
+        },
+        {
+            "id": 2022,
+            "name": "Rapid Lightcannon"
+        },
+        {
+            "id": 2035,
+            "name": "Locket of Targon Prime"
+        },
+        {
+            "id": 2066,
+            "name": "Dragon's Will"
+        },
+        {
+            "id": 2029,
+            "name": "Eternal Whisper"
+        },
+        {
+            "id": 2049,
+            "name": "Fist of Fairness"
+        },
+        {
+            "id": 2067,
+            "name": "Mistral"
+        },
+        {
+            "id": 2045,
+            "name": "Frozen Heart Of Gold"
+        },
+        {
+            "id": 2099,
+            "name": "Rascal's Gloves"
+        },
+        {
+            "id": 2033,
+            "name": "Rabadon's Ascended Deathcap"
+        },
+        {
+            "id": 2034,
+            "name": "Urf-Angel's Staff"
+        },
+        {
+            "id": 2012,
+            "name": "Demonslayer"
+        },
+        {
+            "id": 2023,
+            "name": "Guinsoo's Reckoning"
+        },
+        {
+            "id": 2039,
+            "name": "Glamorous Gauntlet"
+        },
+        {
+            "id": 2027,
+            "name": "Zz'Rots Invitation"
+        },
+        {
+            "id": 2011,
+            "name": "Luminous Deathblade"
+        },
+        {
+            "id": 2017,
+            "name": "Zeke's Harmony"
+        },
+        {
+            "id": 693,
+            "name": "Pirates"
+        },
+        {
+            "id": 706,
+            "name": "Scholar Crest"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_BrawlerHPVeteran_Name"
+        },
+        {
+            "id": 726,
+            "name": "Syndicate Crown"
+        },
+        {
+            "id": 605,
+            "name": "Runic Shield II"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_AcademyLunchBreak1_Name"
+        },
+        {
+            "id": 606,
+            "name": "Runic Shield III"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_AcademyLunchBreak2_Name"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_AcademyLunchBreak3_Name"
+        },
+        {
+            "id": 604,
+            "name": "Runic Shield I"
+        },
+        {
+            "id": 701,
+            "name": "Protector Heart"
+        },
+        {
+            "id": 649,
+            "name": "Stand United I"
+        },
+        {
+            "id": 603,
+            "name": "Academy Soul"
+        },
+        {
+            "id": 650,
+            "name": "Stand United II"
+        },
+        {
+            "id": 651,
+            "name": "Stand United III"
+        },
+        {
+            "id": 648,
+            "name": "Exiles III"
+        },
+        {
+            "id": 731,
+            "name": "Phony Frontline"
+        },
+        {
+            "id": 647,
+            "name": "Exiles II"
+        },
+        {
+            "id": 657,
+            "name": "Enforcer Soul"
+        },
+        {
+            "id": 735,
+            "name": "Thrill of the Hunt III"
+        },
+        {
+            "id": 614,
+            "name": "Assassin Heart"
+        },
+        {
+            "id": 613,
+            "name": "Smoke Bomb"
+        },
+        {
+            "id": 734,
+            "name": "Thrill of the Hunt II"
+        },
+        {
+            "id": 733,
+            "name": "Thrill of the Hunt I"
+        },
+        {
+            "id": 724,
+            "name": "Socialite Soul"
+        },
+        {
+            "id": 88,
+            "name": "tft_item_name_TFT6_Augment_ForAllUnits"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_ExperimentalChallenger_Name"
+        },
+        {
+            "id": 642,
+            "name": "Armor Plating"
+        },
+        {
+            "id": 743,
+            "name": "Twinshot Soul"
+        },
+        {
+            "id": 610,
+            "name": "Ascension"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_ChallengerForAllUnits_Name"
+        },
+        {
+            "id": 600,
+            "name": "Cram Session"
+        },
+        {
+            "id": 703,
+            "name": "Scoped Weapons"
+        },
+        {
+            "id": 715,
+            "name": "March of Progress"
+        },
+        {
+            "id": 680,
+            "name": "Innovator Heart"
+        },
+        {
+            "id": 716,
+            "name": "Sniper Crown"
+        },
+        {
+            "id": 698,
+            "name": "Pandora's Items"
+        },
+        {
+            "id": 682,
+            "name": "Item Grab Bag I"
+        },
+        {
+            "id": 683,
+            "name": "Item Grab Bag II"
+        },
+        {
+            "id": 656,
+            "name": "Enforcer Heart"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_CriticalThinking_Name"
+        },
+        {
+            "id": 665,
+            "name": "New Recruit"
+        },
+        {
+            "id": 602,
+            "name": "Academy Heart"
+        },
+        {
+            "id": 658,
+            "name": "Mutant Crown"
+        },
+        {
+            "id": 676,
+            "name": "Imperial Heart"
+        },
+        {
+            "id": 660,
+            "name": "Mutant Soul"
+        },
+        {
+            "id": 748,
+            "name": "So Small"
+        },
+        {
+            "id": 687,
+            "name": "Level Up!"
+        },
+        {
+            "id": 639,
+            "name": "Clockwork Crest"
+        },
+        {
+            "id": 609,
+            "name": "Arcanist Soul"
+        },
+        {
+            "id": 666,
+            "name": "Golden Ticket"
+        },
+        {
+            "id": 714,
+            "name": "Scrap Soul"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_ColossusPummel_Name"
+        },
+        {
+            "id": 709,
+            "name": "Scholar Soul"
+        },
+        {
+            "id": 685,
+            "name": "Makeshift Armor II"
+        },
+        {
+            "id": 686,
+            "name": "Makeshift Armor III"
+        },
+        {
+            "id": 601,
+            "name": "Academy Crown"
+        },
+        {
+            "id": 718,
+            "name": "Sharpshooter"
+        },
+        {
+            "id": 746,
+            "name": "Windfall"
+        },
+        {
+            "id": 684,
+            "name": "Makeshift Armor I"
+        },
+        {
+            "id": 659,
+            "name": "Mutant Heart"
+        },
+        {
+            "id": 626,
+            "name": "Challenger Crest"
+        },
+        {
+            "id": 713,
+            "name": "Scrap Heart"
+        },
+        {
+            "id": 616,
+            "name": "Band of Thieves"
+        },
+        {
+            "id": 630,
+            "name": "Chemtech Crown"
+        },
+        {
+            "id": 736,
+            "name": "Titanic Force"
+        },
+        {
+            "id": 627,
+            "name": "En Garde"
+        },
+        {
+            "id": 675,
+            "name": "Imperial Crown"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_SyndicateForAllUnits_Name"
+        },
+        {
+            "id": 88,
+            "name": "All For One"
+        },
+        {
+            "id": 712,
+            "name": "Tinker"
+        },
+        {
+            "id": 628,
+            "name": "Challenger Heart"
+        },
+        {
+            "id": 692,
+            "name": "Gold Reserves"
+        },
+        {
+            "id": 671,
+            "name": "Bodyguard Soul"
+        },
+        {
+            "id": 726,
+            "name": "Syndicate Crest"
+        },
+        {
+            "id": 638,
+            "name": "Broken Stopwatch"
+        },
+        {
+            "id": 716,
+            "name": "Sniper Crest"
+        },
+        {
+            "id": 730,
+            "name": "Syndicate Soul"
+        },
+        {
+            "id": 691,
+            "name": "Mercenary Crest"
+        },
+        {
+            "id": 747,
+            "name": "Woodland Charm"
+        },
+        {
+            "id": 624,
+            "name": "Celestial Blessing II"
+        },
+        {
+            "id": 663,
+            "name": "Featherweights III"
+        },
+        {
+            "id": 625,
+            "name": "Celestial Blessing III"
+        },
+        {
+            "id": 662,
+            "name": "Featherweights II"
+        },
+        {
+            "id": 661,
+            "name": "Featherweights I"
+        },
+        {
+            "id": 623,
+            "name": "Celestial Blessing I"
+        },
+        {
+            "id": 719,
+            "name": "Sniper Heart"
+        },
+        {
+            "id": 717,
+            "name": "Sniper's Nest"
+        },
+        {
+            "id": 672,
+            "name": "High End Shopping"
+        },
+        {
+            "id": 739,
+            "name": "Built Different I"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_FuturePeepers_Name"
+        },
+        {
+            "id": 740,
+            "name": "Built Different II"
+        },
+        {
+            "id": 722,
+            "name": "Share the Spotlight"
+        },
+        {
+            "id": 669,
+            "name": "Stand Behind Me"
+        },
+        {
+            "id": 741,
+            "name": "Built Different III"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_NeekoNeeko_Name"
+        },
+        {
+            "id": 732,
+            "name": "Wise Spending"
+        },
+        {
+            "id": 673,
+            "name": "Hyper Roll"
+        },
+        {
+            "id": 727,
+            "name": "One For All"
+        },
+        {
+            "id": 694,
+            "name": "Mercenary Heart"
+        },
+        {
+            "id": 604,
+            "name": "Arcane Crest"
+        },
+        {
+            "id": 653,
+            "name": "Ardent Censer"
+        },
+        {
+            "id": 729,
+            "name": "Syndicate Heart"
+        },
+        {
+            "id": 617,
+            "name": "Binary Airdrop"
+        },
+        {
+            "id": 615,
+            "name": "Assassin Soul"
+        },
+        {
+            "id": 667,
+            "name": "High Roller"
+        },
+        {
+            "id": 601,
+            "name": "Academy Crest"
+        },
+        {
+            "id": 700,
+            "name": "Protector Crown"
+        },
+        {
+            "id": 630,
+            "name": "Chemtech Crest"
+        },
+        {
+            "id": 737,
+            "name": "Ancient Archives"
+        },
+        {
+            "id": 631,
+            "name": "Instant Injection"
+        },
+        {
+            "id": 612,
+            "name": "Assassin Crown"
+        },
+        {
+            "id": 696,
+            "name": "Metabolic Accelerator"
+        },
+        {
+            "id": 728,
+            "name": "Payday"
+        },
+        {
+            "id": 632,
+            "name": "Chemical Overload I"
+        },
+        {
+            "id": 633,
+            "name": "Chemical Overload II"
+        },
+        {
+            "id": 634,
+            "name": "Chemical Overload III"
+        },
+        {
+            "id": 607,
+            "name": "Spell Blade"
+        },
+        {
+            "id": 695,
+            "name": "Mercenary Soul"
+        },
+        {
+            "id": 702,
+            "name": "Protector Soul"
+        },
+        {
+            "id": 641,
+            "name": "Clockwork Soul"
+        },
+        {
+            "id": 745,
+            "name": "Weakspot"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_Overclock_Name"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_Overclock_Name"
+        },
+        {
+            "id": 710,
+            "name": "Junkyard"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_Overclock_Name"
+        },
+        {
+            "id": 679,
+            "name": "Self Repair"
+        },
+        {
+            "id": 708,
+            "name": "Scholar Heart"
+        },
+        {
+            "id": 688,
+            "name": "Knife's Edge I"
+        },
+        {
+            "id": 635,
+            "name": "Chemtech Heart"
+        },
+        {
+            "id": 690,
+            "name": "Knife's Edge III"
+        },
+        {
+            "id": 689,
+            "name": "Knife's Edge II"
+        },
+        {
+            "id": 725,
+            "name": "Sunfire Board"
+        },
+        {
+            "id": 668,
+            "name": "Bodyguard Crest"
+        },
+        {
+            "id": 611,
+            "name": "Cutthroat"
+        },
+        {
+            "id": 704,
+            "name": "Rich Get Richer"
+        },
+        {
+            "id": 654,
+            "name": "Enchanter Heart"
+        },
+        {
+            "id": 707,
+            "name": "Lifelong Learning"
+        },
+        {
+            "id": 619,
+            "name": "Bruiser Crest"
+        },
+        {
+            "id": 678,
+            "name": "Imperial Soul"
+        },
+        {
+            "id": 658,
+            "name": "Mutant Crest"
+        },
+        {
+            "id": 723,
+            "name": "Socialite Heart"
+        },
+        {
+            "id": 674,
+            "name": "Dual Rule"
+        },
+        {
+            "id": 699,
+            "name": "Portable Forge"
+        },
+        {
+            "id": 612,
+            "name": "Assassin Crest"
+        },
+        {
+            "id": 626,
+            "name": "Challenger Crown"
+        },
+        {
+            "id": 711,
+            "name": "Scrap Crest"
+        },
+        {
+            "id": 668,
+            "name": "Bodyguard Crown"
+        },
+        {
+            "id": 681,
+            "name": "Innovator Soul"
+        },
+        {
+            "id": 622,
+            "name": "Calculated Loss"
+        },
+        {
+            "id": 619,
+            "name": "Bruiser Crown"
+        },
+        {
+            "id": 621,
+            "name": "Bruiser Soul"
+        },
+        {
+            "id": 700,
+            "name": "Protector Crest"
+        },
+        {
+            "id": 664,
+            "name": "First Aid Kit"
+        },
+        {
+            "id": 636,
+            "name": "Chemtech Soul"
+        },
+        {
+            "id": 742,
+            "name": "Twinshot Heart"
+        },
+        {
+            "id": 655,
+            "name": "Enchanter Soul"
+        },
+        {
+            "id": 645,
+            "name": "Cybernetic Implants III"
+        },
+        {
+            "id": 744,
+            "name": "Underdogs"
+        },
+        {
+            "id": 644,
+            "name": "Cybernetic Implants II"
+        },
+        {
+            "id": 643,
+            "name": "Cybernetic Implants I"
+        },
+        {
+            "id": 652,
+            "name": "Dominance"
+        },
+        {
+            "id": 646,
+            "name": "Exiles"
+        },
+        {
+            "id": 697,
+            "name": "Unstable Evolution"
+        },
+        {
+            "id": 618,
+            "name": "Shrug It Off"
+        },
+        {
+            "id": 640,
+            "name": "Clockwork Heart"
+        },
+        {
+            "id": 88,
+            "name": "tft_item_name_TFT6_Augment_AssassinForAllUnits"
+        },
+        {
+            "id": 720,
+            "name": "Sniper Soul"
+        },
+        {
+            "id": 738,
+            "name": "Trade Sector"
+        },
+        {
+            "id": 604,
+            "name": "Arcanist Crown"
+        },
+        {
+            "id": 721,
+            "name": "Duet"
+        },
+        {
+            "id": 705,
+            "name": "Salvage Bin"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_ChemtechForAllUnits_Name"
+        },
+        {
+            "id": 620,
+            "name": "Bruiser Heart"
+        },
+        {
+            "id": 670,
+            "name": "Bodyguard Heart"
+        },
+        {
+            "id": 629,
+            "name": "Challenger Soul"
+        },
+        {
+            "id": 88,
+            "name": "TFT6_Augment_InfinityCane_Name"
+        },
+        {
+            "id": 608,
+            "name": "Arcanist Heart"
+        },
+        {
+            "id": 637,
+            "name": "Clear Mind"
+        },
+        {
+            "id": 675,
+            "name": "Imperial Crest"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Book"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Bag"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Spatula"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Fish"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Chest"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Sword"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_X"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Shell"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Kraken"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_X"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Ship"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Coin"
+        },
+        {
+            "id": 403,
+            "name": "tft_item_name_Mercenary_Soldier"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Chest"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Book"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Sword"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Bag"
+        },
+        {
+            "id": 406,
+            "name": "Golden Soldier"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Golden Ship"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "No Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Kraken"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "JACKPOT"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Large Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Spatula"
+        },
+        {
+            "id": 406,
+            "name": "Small Prize"
+        },
+        {
+            "id": 406,
+            "name": "Golden Shell"
+        },
+        {
+            "id": 33,
+            "name": "Rabadon's Deathcap"
+        },
+        {
+            "id": 19,
+            "name": "Infinity Edge"
+        },
+        {
+            "id": 45,
+            "name": "Frozen Heart"
+        },
+        {
+            "id": 18,
+            "name": "Sword of the Divine"
+        },
+        {
+            "id": 2194,
+            "name": "Enforcer Emblem"
+        },
+        {
+            "id": 200,
+            "name": "Kayn's Liberation"
+        },
+        {
+            "id": 68,
+            "name": "Talisman of Light"
+        },
+        {
+            "id": -46,
+            "name": "tft_item_name_Hush"
+        },
+        {
+            "id": 59,
+            "name": "Shroud of Stillness"
+        },
+        {
+            "id": 206,
+            "name": "Shadow Transformer"
+        },
+        {
+            "id": 2128,
+            "name": "tft_item_name_Set5Hellion_RadiantSpat"
+        },
+        {
+            "id": 1178,
+            "name": "Nightbringer Emblem"
+        },
+        {
+            "id": 47,
+            "name": "Redemption"
+        },
+        {
+            "id": 58,
+            "name": "Warden's Mail"
+        },
+        {
+            "id": 67,
+            "name": "Zephyr"
+        },
+        {
+            "id": 10203,
+            "name": "tft_item_name_OceanHexBuff"
+        },
+        {
+            "id": 1138,
+            "name": "Dragonslayer Emblem"
+        },
+        {
+            "id": 48,
+            "name": "tft_item_name_SteelSphere"
+        },
+        {
+            "id": 2191,
+            "name": "Clockwork Emblem"
+        },
+        {
+            "id": 9005,
+            "name": "Manazane"
+        },
+        {
+            "id": 1190,
+            "name": "Ranger Emblem"
+        },
+        {
+            "id": 2178,
+            "name": "tft_item_name_Set5Nightbringer_RadiantSpat"
+        },
+        {
+            "id": 202,
+            "name": "Reforger"
+        },
+        {
+            "id": 1196,
+            "name": "Knight Emblem"
+        },
+        {
+            "id": -28,
+            "name": "TFT_item_name_BladeOfTheRuinedKing"
+        },
+        {
+            "id": 17,
+            "name": "Zeke's Herald"
+        },
+        {
+            "id": 99,
+            "name": "Thief's Gloves"
+        },
+        {
+            "id": 2203,
+            "name": "One 3+ Cost Unit"
+        },
+        {
+            "id": 568,
+            "name": "tft_item_name_Set5Redeemed_RadiantSpat"
+        },
+        {
+            "id": 23,
+            "name": "Guinsoo's Rageblade"
+        },
+        {
+            "id": 28,
+            "name": "Duelist's Zeal"
+        },
+        {
+            "id": 36,
+            "name": "Ionic Spark"
+        },
+        {
+            "id": 1192,
+            "name": "Invoker Emblem"
+        },
+        {
+            "id": 66,
+            "name": "Dragon's Claw"
+        },
+        {
+            "id": 203,
+            "name": "Magnetic Remover"
+        },
+        {
+            "id": 68,
+            "name": "Redeemed Emblem"
+        },
+        {
+            "id": -25,
+            "name": "TFT_item_name_PhantomDancer"
+        },
+        {
+            "id": 79,
+            "name": "Banshee's Claw"
+        },
+        {
+            "id": 2192,
+            "name": "Mercenary Emblem"
+        },
+        {
+            "id": 2201,
+            "name": "Two 1-Cost & One 2-Cost Units"
+        },
+        {
+            "id": 1195,
+            "name": "Cannoneer Emblem"
+        },
+        {
+            "id": 1191,
+            "name": "Draconic Emblem"
+        },
+        {
+            "id": 10006,
+            "name": "Loot Bag"
+        },
+        {
+            "id": 206,
+            "name": "Light Transformer"
+        },
+        {
+            "id": 200,
+            "name": "Rhaast's Embrace"
+        },
+        {
+            "id": 518,
+            "name": "tft_item_name_Set5Skirmisher_RadiantSpat"
+        },
+        {
+            "id": 58,
+            "name": "Bodyguard Emblem"
+        },
+        {
+            "id": 200,
+            "name": "Neeko's Help"
+        },
+        {
+            "id": 44,
+            "name": "Blue Buff"
+        },
+        {
+            "id": 5,
+            "name": "Chain Vest"
+        },
+        {
+            "id": 1,
+            "name": "B.F. Sword"
+        },
+        {
+            "id": 15,
+            "name": "Guardian Angel"
+        },
+        {
+            "id": -55,
+            "name": "game_item_displayname_3075"
+        },
+        {
+            "id": 305,
+            "name": "tft_item_name_EmblemArmoryConsumable"
+        },
+        {
+            "id": 2213,
+            "name": "8 Gold"
+        },
+        {
+            "id": 68,
+            "name": "tft_item_name_CelestialSpatulaItem"
+        },
+        {
+            "id": 9001,
+            "name": "Anima Visage"
+        },
+        {
+            "id": 56,
+            "name": "Gargoyle Stoneplate"
+        },
+        {
+            "id": 55,
+            "name": "Bramble Vest"
+        },
+        {
+            "id": 1128,
+            "name": "Hellion Emblem"
+        },
+        {
+            "id": 5,
+            "name": "Chain Vest"
+        },
+        {
+            "id": 18,
+            "name": "Skirmisher Emblem"
+        },
+        {
+            "id": 9008,
+            "name": "Rocket-Propelled Fist"
+        },
+        {
+            "id": 89,
+            "name": "Youmuu's Ghostblade"
+        },
+        {
+            "id": -59,
+            "name": "tft_item_name_FrozenFist"
+        },
+        {
+            "id": 2168,
+            "name": "tft_item_name_Set5Revenant_RadiantSpat"
+        },
+        {
+            "id": 529,
+            "name": "tft_item_name_SpellThiefsEdge"
+        },
+        {
+            "id": 2210,
+            "name": "5 Gold"
+        },
+        {
+            "id": 2211,
+            "name": "6 Gold"
+        },
+        {
+            "id": 2212,
+            "name": "7 Gold"
+        },
+        {
+            "id": 9003,
+            "name": "Eternal Winter"
+        },
+        {
+            "id": 48,
+            "name": "Mage's Hat"
+        },
+        {
+            "id": 2196,
+            "name": "Protector Emblem"
+        },
+        {
+            "id": 2198,
+            "name": "Innovator Emblem"
+        },
+        {
+            "id": 149,
+            "name": "TFT_item_name_Catalyst"
+        },
+        {
+            "id": 18,
+            "name": "Youmuu's Ghostblade"
+        },
+        {
+            "id": 10204,
+            "name": "tft_item_name_WindHexBuff"
+        },
+        {
+            "id": 58,
+            "name": "Vanguard's Cuirass"
+        },
+        {
+            "id": -38,
+            "name": "tft_item_name_DemolitionistSpatulaItem"
+        },
+        {
+            "id": 2200,
+            "name": "Scholar Emblem"
+        },
+        {
+            "id": 2,
+            "name": "Recurve Bow"
+        },
+        {
+            "id": 12,
+            "name": "Giant Slayer"
+        },
+        {
+            "id": 68,
+            "name": "Elderwood Sprout"
+        },
+        {
+            "id": 10201,
+            "name": "tft_item_name_InfernoHexBuff"
+        },
+        {
+            "id": 9006,
+            "name": "Obsidian Cleaver"
+        },
+        {
+            "id": 57,
+            "name": "Sunfire Cape"
+        },
+        {
+            "id": 558,
+            "name": "tft_item_name_Set5Ironclad_RadiantSpat"
+        },
+        {
+            "id": 2220,
+            "name": "Random Component"
+        },
+        {
+            "id": 2204,
+            "name": "Two 3+Cost Units"
+        },
+        {
+            "id": 18,
+            "name": "Imperial Emblem"
+        },
+        {
+            "id": 205,
+            "name": "Divine Dissolver"
+        },
+        {
+            "id": -100,
+            "name": "tft_item_name_SwordOfTheDivine2"
+        },
+        {
+            "id": 49,
+            "name": "Hand Of Justice"
+        },
+        {
+            "id": -26,
+            "name": "tft_item_name_CursedBlade"
+        },
+        {
+            "id": 15,
+            "name": "Guardian Angel"
+        },
+        {
+            "id": 44,
+            "name": "Blue Buff"
+        },
+        {
+            "id": 4,
+            "name": "Tear of the Goddess"
+        },
+        {
+            "id": 10004,
+            "name": "Deathblade"
+        },
+        {
+            "id": 1158,
+            "name": "Cavalier Emblem"
+        },
+        {
+            "id": 9010,
+            "name": "Zhonya's Paradox"
+        },
+        {
+            "id": 6,
+            "name": "Negatron Cloak"
+        },
+        {
+            "id": 2197,
+            "name": "Bruiser Emblem"
+        },
+        {
+            "id": 25,
+            "name": "Titan's Resolve"
+        },
+        {
+            "id": 89,
+            "name": "tft_item_name_DarkStarSpatulaItem"
+        },
+        {
+            "id": 2193,
+            "name": "Socialite Emblem"
+        },
+        {
+            "id": 78,
+            "name": "Protector's Chestguard"
+        },
+        {
+            "id": 78,
+            "name": "TFT_item_name_FrozenMallet"
+        },
+        {
+            "id": 2190,
+            "name": "Mutant Emblem"
+        },
+        {
+            "id": 26,
+            "name": "Runaan's Hurricane"
+        },
+        {
+            "id": 1194,
+            "name": "Sentinel Emblem"
+        },
+        {
+            "id": -89,
+            "name": "tft_item_name_Mittens"
+        },
+        {
+            "id": 28,
+            "name": "tft_item_name_InfiltratorSpatulaItem"
+        },
+        {
+            "id": 10003,
+            "name": "B.F. Sword"
+        },
+        {
+            "id": 9,
+            "name": "Sparring Gloves"
+        },
+        {
+            "id": 16,
+            "name": "Bloodthirster"
+        },
+        {
+            "id": 2214,
+            "name": "10 Gold"
+        },
+        {
+            "id": 34,
+            "name": "Archangel's Staff"
+        },
+        {
+            "id": 2195,
+            "name": "Scrap Emblem"
+        },
+        {
+            "id": -58,
+            "name": "Knight's Vow"
+        },
+        {
+            "id": 38,
+            "name": "Arcanist Emblem"
+        },
+        {
+            "id": -78,
+            "name": "TFT_item_name_FrozenMallet"
+        },
+        {
+            "id": 28,
+            "name": "Challenger Emblem"
+        },
+        {
+            "id": 38,
+            "name": "Inferno's Cinder"
+        },
+        {
+            "id": 2222,
+            "name": "Rune of Allegiance"
+        },
+        {
+            "id": 27,
+            "name": "Zz'Rot Portal"
+        },
+        {
+            "id": -1,
+            "name": "tft_item_name_HextechChestguard"
+        },
+        {
+            "id": 28,
+            "name": "Legionnaire Emblem"
+        },
+        {
+            "id": 589,
+            "name": "tft_item_name_Set5Assassin_RadiantSpat"
+        },
+        {
+            "id": 58,
+            "name": "Ironclad Emblem"
+        },
+        {
+            "id": 89,
+            "name": "Berserker's Axe"
+        },
+        {
+            "id": 9100,
+            "name": "TFT6_Item_Name_EliteSpotlight"
+        },
+        {
+            "id": 9002,
+            "name": "Death's Defiance"
+        },
+        {
+            "id": -48,
+            "name": "tft_item_name_Darkin"
+        },
+        {
+            "id": 2148,
+            "name": "tft_item_name_Set5Coven_RadiantSpat"
+        },
+        {
+            "id": 14,
+            "name": "Spear of Shojin"
+        },
+        {
+            "id": -18,
+            "name": "Youmuu's Ghostblade"
+        },
+        {
+            "id": 8,
+            "name": "Spatula"
+        },
+        {
+            "id": 68,
+            "name": "Syndicate Emblem"
+        },
+        {
+            "id": 38,
+            "name": "Battlecast Plating"
+        },
+        {
+            "id": 58,
+            "name": "tft_item_name_RebelSpatulaItem"
+        },
+        {
+            "id": 2199,
+            "name": "Sniper Emblem"
+        },
+        {
+            "id": 9004,
+            "name": "Infinity Force"
+        },
+        {
+            "id": 35,
+            "name": "Locket of the Iron Solari"
+        },
+        {
+            "id": 1118,
+            "name": "Forgotten Emblem"
+        },
+        {
+            "id": -38,
+            "name": "TFT_item_name_Yuumi"
+        },
+        {
+            "id": 37,
+            "name": "Morellonomicon"
+        },
+        {
+            "id": 1168,
+            "name": "Revenant Emblem"
+        },
+        {
+            "id": 22,
+            "name": "Rapid Firecannon"
+        },
+        {
+            "id": 204,
+            "name": "Target Dummy"
+        },
+        {
+            "id": 1193,
+            "name": "Brawler Emblem"
+        },
+        {
+            "id": 1,
+            "name": "B.F. Sword"
+        },
+        {
+            "id": 38,
+            "name": "Spirit of the Dragon"
+        },
+        {
+            "id": 201,
+            "name": "Loaded Dice"
+        },
+        {
+            "id": -35,
+            "name": "Zhonya's Hourglass"
+        },
+        {
+            "id": 28,
+            "name": "TFT_item_name_BladeOfTheRuinedKing"
+        },
+        {
+            "id": 528,
+            "name": "tft_item_name_Set5Legionnaire_RadiantSpat"
+        },
+        {
+            "id": 48,
+            "name": "tft_item_name_StarGuardianSpatulaItem"
+        },
+        {
+            "id": 78,
+            "name": "Warlord's Banner"
+        },
+        {
+            "id": 29,
+            "name": "Last Whisper"
+        },
+        {
+            "id": 48,
+            "name": "Renewer Emblem"
+        },
+        {
+            "id": 89,
+            "name": "Assassin Emblem"
+        },
+        {
+            "id": 39,
+            "name": "Jeweled Gauntlet"
+        },
+        {
+            "id": 7,
+            "name": "Giant's Belt"
+        },
+        {
+            "id": 2189,
+            "name": "tft_item_name_Set5Abomination_RadiantSpat"
+        },
+        {
+            "id": 1148,
+            "name": "Coven Emblem"
+        },
+        {
+            "id": 100,
+            "name": "Spatula"
+        },
+        {
+            "id": 10002,
+            "name": "Jammed!"
+        },
+        {
+            "id": 10001,
+            "name": "Loot Bag"
+        },
+        {
+            "id": -38,
+            "name": "Aspect of Dusk"
+        },
+        {
+            "id": 2202,
+            "name": "Three 2-Cost Units"
+        },
+        {
+            "id": 3,
+            "name": "Needlessly Large Rod"
+        },
+        {
+            "id": 541,
+            "name": "Mortal Reminder"
+        },
+        {
+            "id": 9007,
+            "name": "Randuin's Sanctum"
+        },
+        {
+            "id": 10005,
+            "name": "tft_item_name_SwordOfTheDivine2"
+        },
+        {
+            "id": -29,
+            "name": "tft_item_name_SwordOfTheDivine2"
+        },
+        {
+            "id": 88,
+            "name": "Tactician's Crown"
+        },
+        {
+            "id": 48,
+            "name": "Academy Emblem"
+        },
+        {
+            "id": 78,
+            "name": "Dawnbringer Emblem"
+        },
+        {
+            "id": 69,
+            "name": "Quicksilver"
+        },
+        {
+            "id": 11,
+            "name": "Deathblade"
+        },
+        {
+            "id": 538,
+            "name": "tft_item_name_Set5Spellweaver_RadiantSpat"
+        },
+        {
+            "id": 2158,
+            "name": "tft_item_name_Set5Cavalier_RadiantSpat"
+        },
+        {
+            "id": 578,
+            "name": "tft_item_name_Set5Dawnbringer_RadiantSpat"
+        },
+        {
+            "id": 38,
+            "name": "Spellweaver Emblem"
+        },
+        {
+            "id": 1197,
+            "name": "Mystic Emblem"
+        },
+        {
+            "id": 46,
+            "name": "Chalice of Power"
+        },
+        {
+            "id": 89,
+            "name": "Assassin Emblem"
+        },
+        {
+            "id": 77,
+            "name": "Warmog's Armor"
+        },
+        {
+            "id": 78,
+            "name": "Chemtech Emblem"
+        },
+        {
+            "id": 24,
+            "name": "Statikk Shiv"
+        },
+        {
+            "id": 18,
+            "name": "tft_item_name_UmbralGlaive"
+        },
+        {
+            "id": 548,
+            "name": "tft_item_name_Set5Renewer_RadiantSpat"
+        },
+        {
+            "id": 9009,
+            "name": "Gold Collector"
+        },
+        {
+            "id": 2221,
+            "name": "Special Item + 4 Gold"
+        },
+        {
+            "id": 999,
+            "name": "Unusable Slot"
+        },
+        {
+            "id": 13,
+            "name": "Hextech Gunblade"
+        },
+        {
+            "id": 10202,
+            "name": "tft_item_name_MountainHexBuff"
+        },
+        {
+            "id": 2118,
+            "name": "tft_item_name_Set5Forgotten_RadiantSpat"
+        },
+        {
+            "id": 1189,
+            "name": "Abomination Emblem"
+        },
+        {
+            "id": 2205,
+            "name": "Three 3+Cost Units"
+        }
+    ]
+}

@@ -5,6 +5,7 @@ const {
     MessageEmbed,
     MessageAttachment
 } = require('discord.js');
+const itemsData = require('./items.json');
 const ChartJsImage = require('chartjs-to-image');
 require('dotenv').config();
 async function getUserStats(msg, username) {
@@ -16,7 +17,8 @@ async function getUserStats(msg, username) {
 
         let games = await api.Match.listWithDetails(
             puuid,
-            Constants.RegionGroups.EUROPE
+            Constants.RegionGroups.EUROPE,
+            { count: process.env.PREFIX === 't!' ? 20 : 20 }
         );
         games = games.filter(
             g => g.info.tft_set_number === 6 && g.info.queue_id === 1100
@@ -24,36 +26,9 @@ async function getUserStats(msg, username) {
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
         games = games.reverse();
-        let traits = {
-            Set6_Academy: 0,
-            Set6_Arcanist: 0,
-            Set6_Chemtech: 0,
-            Set6_Cuddly: 0,
-            Set6_Enchanter: 0,
-            Set6_Imperial: 0,
-            Set6_Mutant: 0,
-            Set6_Scholar: 0,
-            Set6_Scrap: 0,
-            Set6_Socialite: 0,
-            Set6_Yordle: 0,
-            Set6_Assassin: 0,
-            Set6_Bodyguard: 0,
-            Set6_Bruiser: 0,
-            Set6_Enforcer: 0,
-            Set6_Glutton: 0,
-            Set6_Mercenary: 0,
-            Set6_Protector: 0,
-            Set6_Sister: 0,
-            Set6_Syndicate: 0,
-            Set6_Twinshot: 0,
-            Set6_Challenger: 0,
-            Set6_Clockwork: 0,
-            Set6_Innovator: 0,
-            Set6_Transformer: 0,
-            Set6_Sniper: 0,
-            Set6_Colossus: 0
-        };
-
+        let traits = {};
+        let units = {};
+        let items = {};
         let placements = [];
         let gold = [];
         let levels = [];
@@ -64,8 +39,12 @@ async function getUserStats(msg, username) {
                 g => g.puuid === puuid
             )[0];
             placements.push(stats.placement);
-            stats.traits.forEach(t => {
-                traits[t.name]++;
+            stats.traits.forEach(
+                t => (traits[t.name] = (traits[t.name] || 0) + 1)
+            );
+            stats.units.forEach(u => {
+                u.items.forEach(i => (items[i] = (items[i] || 0) + 1));
+                units[u.character_id] = (units[u.character_id] || 0) + 1;
             });
             levels.push(stats.level);
             gold.push(stats.gold_left);
@@ -147,8 +126,10 @@ async function getUserStats(msg, username) {
             .toDataUrl();
 
         let graphImage = attachGraphImage(placementsGraph);
-        // Sort most used traits
+
         traits = sortTraits(traits);
+        units = sortUnits(units);
+        items = sortItems(items);
 
         const embed = new MessageEmbed()
             .setTitle(
@@ -165,6 +146,20 @@ async function getUserStats(msg, username) {
                     value: `→1. ${Object.keys(traits)[0]}   
             →2. ${Object.keys(traits)[1]}
             →3. ${Object.keys(traits)[2]}`,
+                    inline: true
+                },
+                {
+                    name: '**Most Used Units**',
+                    value: `→1. ${Object.keys(units)[0]}   
+            →2. ${Object.keys(units)[1]}
+            →3. ${Object.keys(units)[2]}`,
+                    inline: true
+                },
+                {
+                    name: '**Most Used Items**',
+                    value: `→1. ${Object.keys(items)[0]}   
+            →2. ${Object.keys(items)[1]}
+            →3. ${Object.keys(items)[2]}`,
                     inline: true
                 },
                 {
@@ -208,7 +203,7 @@ async function getUserStats(msg, username) {
         } else if (e.status === 429) {
             return rateLimitResponse(msg, username);
         } else {
-            return unknownErrorResponse(msg, username);
+            return unknownErrorResponse(msg, username, e);
         }
     }
 }
@@ -217,6 +212,40 @@ function sortTraits(traits) {
     var sortable = [];
     for (var trait in traits) {
         sortable.push([trait, traits[trait]]);
+    }
+
+    sortable.sort((a, b) => b[1] - a[1]);
+    var objSorted = {};
+    sortable.forEach(item => {
+        objSorted[item[0].substr(5)] = item[1];
+    });
+    return objSorted;
+}
+
+function sortItems(items) {
+    var sortable = [];
+    for (var item in items) {
+        sortable.push([item, items[item]]);
+    }
+
+    sortable.sort((a, b) => b[1] - a[1]);
+    var objSorted = {};
+    sortable.forEach(item => {
+        let itemData = itemsData.items
+            .filter(i => i.id === Number.parseInt(item[0]))
+            .at(-1);
+        console.log({ itemData });
+        console.log({ item });
+        objSorted[itemData.name] = item[1];
+    });
+    console.log(objSorted);
+    return objSorted;
+}
+
+function sortUnits(units) {
+    var sortable = [];
+    for (var unit in units) {
+        sortable.push([unit, units[unit]]);
     }
 
     sortable.sort((a, b) => b[1] - a[1]);
@@ -258,7 +287,8 @@ async function rateLimitResponse(msg, username) {
     });
 }
 
-async function unknownErrorResponse(msg, username) {
+async function unknownErrorResponse(msg, username, error) {
+    console.log(error);
     const embed = new MessageEmbed().setTitle(`Unknown error`);
     await msg.channel.send({
         embeds: [embed]
