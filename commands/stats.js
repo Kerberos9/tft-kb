@@ -143,13 +143,13 @@ async function getUserStats(msg, username) {
     traits = sortTraits(traits);
 
     const embed = new MessageEmbed()
-        .setTitle(`TFT Stats for ${username}`)
+        .setTitle(`**TEST** TFT Stats for ${username}`)
         .setImage(placementsGraph)
         .setImage('attachment://chart.jpeg')
         .setColor(11167487)
         .addFields([
             {
-                name: '**Best Traits**',
+                name: '**Most Used Traits**',
                 value: `→1. ${Object.keys(traits)[0]}   
             →2. ${Object.keys(traits)[1]}
             →3. ${Object.keys(traits)[2]}`,
