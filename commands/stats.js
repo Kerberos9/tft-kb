@@ -21,7 +21,7 @@ async function getUserStats(msg, username) {
         games = games.filter(g => g.info.tft_set_number === 6);
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
-
+        games = games.reverse();
         let traits = {
             Set6_Academy: 0,
             Set6_Arcanist: 0,
