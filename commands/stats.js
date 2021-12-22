@@ -12,9 +12,16 @@ async function getUserStats(msg, username) {
     const api = new TftApi();
     try {
         const {
-            response: { puuid }
+            response: { puuid, id }
         } = await api.Summoner.getByName(username, Constants.Regions.EU_WEST);
 
+        let rank = (await api.League.get(id, Constants.Regions.EU_WEST))
+            .response[0];
+        tier = rank.tier.toLowerCase();
+        tier =
+            tier[0].toUpperCase() +
+            tier.slice(1) +
+            ` ${rank.rank} ${rank.hotStreak ? ':fire::fire::fire:' : ''}`;
         let games = await api.Match.listWithDetails(
             puuid,
             Constants.RegionGroups.EUROPE,
@@ -187,9 +194,14 @@ async function getUserStats(msg, username) {
                     inline: true
                 },
                 {
+                    name: '**Rank**',
+                    value: tier,
+                    inline: true
+                },
+                {
                     name: '**Average Placement**',
                     value: `${placementsAverage} ${
-                        placementsAverage > 4
+                        placementsAverage >= 4.5
                             ? '<:Sadge:825386882603024395>'
                             : '<:Pog:648630351874359298>'
                     }`,
