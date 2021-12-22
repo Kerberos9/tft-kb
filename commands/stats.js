@@ -52,9 +52,9 @@ async function getUserStats(msg, username) {
                 g => g.puuid === puuid
             )[0];
             placements.push(stats.placement);
-            stats.traits.forEach(
-                t => (traits[t.name] = (traits[t.name] || 0) + 1)
-            );
+            stats.traits.forEach(t => {
+                traits[t.name] = (traits[t.name] || 0) + t.tier_current;
+            });
             let totalUnitCost = 0;
             stats.units.forEach(u => {
                 u.items.forEach(i => (items[i] = (items[i] || 0) + 1));
