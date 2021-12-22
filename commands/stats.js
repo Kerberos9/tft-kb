@@ -15,9 +15,6 @@ async function getUserStats(msg, username) {
             response: { puuid, id }
         } = await api.Summoner.getByName(username, Constants.Regions.EU_WEST);
 
-        let rank = (await api.League.get(id, Constants.Regions.EU_WEST))
-            .response[0];
-
         let games = await api.Match.listWithDetails(
             puuid,
             Constants.RegionGroups.EUROPE,
@@ -28,6 +25,8 @@ async function getUserStats(msg, username) {
         );
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
+        let rank = (await api.League.get(id, Constants.Regions.EU_WEST))
+            .response[0];
         tier = rank.tier.toLowerCase();
         tier =
             tier[0].toUpperCase() +
@@ -43,6 +42,7 @@ async function getUserStats(msg, username) {
         let rounds = [];
         let damageToPlayers = [];
         let cost = [];
+        let totalCost = [];
         games.forEach(game => {
             let stats = game.info.participants.filter(
                 g => g.puuid === puuid
@@ -51,15 +51,18 @@ async function getUserStats(msg, username) {
             stats.traits.forEach(
                 t => (traits[t.name] = (traits[t.name] || 0) + 1)
             );
+            let totalUnitCost = 0;
             stats.units.forEach(u => {
                 u.items.forEach(i => (items[i] = (items[i] || 0) + 1));
                 units[u.character_id] = (units[u.character_id] || 0) + 1;
                 cost.push(u.rarity + 1);
+                totalUnitCost += u.rarity + 1;
             });
             levels.push(stats.level);
             gold.push(stats.gold_left);
             rounds.push(stats.last_round);
             damageToPlayers.push(stats.total_damage_to_players);
+            totalCost.push(totalUnitCost);
         });
         let placementsAverage = getAverage(placements).toFixed(2);
         let goldAverage = getAverage(gold).toFixed(2);
@@ -67,7 +70,7 @@ async function getUserStats(msg, username) {
         let roundsAverage = getAverage(rounds).toFixed(2);
         let damageToPlayersAverage = getAverage(damageToPlayers).toFixed(2);
         let costAverage = getAverage(cost).toFixed(2);
-        console.log(costAverage);
+        let totalCostAverage = getAverage(totalCost).toFixed(2);
         // Placements graph
         const placementsGraph = await new ChartJsImage()
             .setConfig({
@@ -149,7 +152,6 @@ async function getUserStats(msg, username) {
                     process.env.PREFIX === 'tft!' ? '' : '**TEST** '
                 }TFT Stats for ${username}`
             )
-            .setImage(placementsGraph)
             .setImage('attachment://chart.jpeg')
             .setFooter(
                 'https://github.com/Kerberos9/tft-kb',
@@ -196,6 +198,11 @@ async function getUserStats(msg, username) {
                 {
                     name: '**Average Unit Cost**',
                     value: `${costAverage}`,
+                    inline: true
+                },
+                {
+                    name: '**Average Board Cost**',
+                    value: `${totalCostAverage}`,
                     inline: true
                 },
                 {
