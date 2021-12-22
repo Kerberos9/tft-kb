@@ -27,11 +27,15 @@ async function getUserStats(msg, username) {
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
         let rank = (await api.League.get(id, Constants.Regions.EU_WEST))
             .response[0];
-        tier = rank.tier.toLowerCase();
-        tier =
-            tier[0].toUpperCase() +
-            tier.slice(1) +
-            ` ${rank.rank} ${rank.hotStreak ? ':fire::fire::fire:' : ''}`;
+        if (rank) {
+            tier = rank.tier.toLowerCase();
+            tier =
+                tier[0].toUpperCase() +
+                tier.slice(1) +
+                ` ${rank.rank} ${rank.hotStreak ? ':fire::fire::fire:' : ''}`;
+        } else {
+            tier = 'Not ranked yet';
+        }
         games = games.reverse();
         let traits = {};
         let units = {};
