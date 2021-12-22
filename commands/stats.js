@@ -17,11 +17,7 @@ async function getUserStats(msg, username) {
 
         let rank = (await api.League.get(id, Constants.Regions.EU_WEST))
             .response[0];
-        tier = rank.tier.toLowerCase();
-        tier =
-            tier[0].toUpperCase() +
-            tier.slice(1) +
-            ` ${rank.rank} ${rank.hotStreak ? ':fire::fire::fire:' : ''}`;
+
         let games = await api.Match.listWithDetails(
             puuid,
             Constants.RegionGroups.EUROPE,
@@ -32,6 +28,11 @@ async function getUserStats(msg, username) {
         );
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
+        tier = rank.tier.toLowerCase();
+        tier =
+            tier[0].toUpperCase() +
+            tier.slice(1) +
+            ` ${rank.rank} ${rank.hotStreak ? ':fire::fire::fire:' : ''}`;
         games = games.reverse();
         let traits = {};
         let units = {};
@@ -41,6 +42,7 @@ async function getUserStats(msg, username) {
         let levels = [];
         let rounds = [];
         let damageToPlayers = [];
+        let cost = [];
         games.forEach(game => {
             let stats = game.info.participants.filter(
                 g => g.puuid === puuid
@@ -52,6 +54,7 @@ async function getUserStats(msg, username) {
             stats.units.forEach(u => {
                 u.items.forEach(i => (items[i] = (items[i] || 0) + 1));
                 units[u.character_id] = (units[u.character_id] || 0) + 1;
+                cost.push(u.rarity + 1);
             });
             levels.push(stats.level);
             gold.push(stats.gold_left);
@@ -63,6 +66,8 @@ async function getUserStats(msg, username) {
         let levelsAverage = getAverage(levels).toFixed(2);
         let roundsAverage = getAverage(rounds).toFixed(2);
         let damageToPlayersAverage = getAverage(damageToPlayers).toFixed(2);
+        let costAverage = getAverage(cost).toFixed(2);
+        console.log(costAverage);
         // Placements graph
         const placementsGraph = await new ChartJsImage()
             .setConfig({
@@ -186,6 +191,11 @@ async function getUserStats(msg, username) {
                 {
                     name: '**Average End Round**',
                     value: `${roundsAverage}`,
+                    inline: true
+                },
+                {
+                    name: '**Average Unit Cost**',
+                    value: `${costAverage}`,
                     inline: true
                 },
                 {
