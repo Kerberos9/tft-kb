@@ -14,9 +14,12 @@ bot.on('ready', () => {
 bot.on('messageCreate', async msg => {
     if (!msg.content.startsWith(prefix)) return;
 
-    const username = msg.content.slice(prefix.length);
-    getUserStats(msg, username);
-    console.log(`Message received!: ${msg.content}\nUsername: ${username}
+    const message = msg.content.slice(prefix.length).split('-');
+    const username = message[0];
+    const region = message[1] || 'euw';
+
+    getUserStats(msg, username, region);
+    console.log(`Message received!: ${msg.content}\nUsername: ${username}\nRegion: ${region}
     `);
 });
 

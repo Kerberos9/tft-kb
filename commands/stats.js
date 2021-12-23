@@ -8,25 +8,31 @@ const {
 const itemsData = require('./items.json');
 const ChartJsImage = require('chartjs-to-image');
 require('dotenv').config();
-async function getUserStats(msg, username) {
+async function getUserStats(msg, username, regionSlug) {
     const api = new TftApi();
+
     try {
+        msg.react('✅');
+        const region = getRegionBySlug(regionSlug);
+        console.log(region);
+        if (region === 'error')
+            return regionNotFoundResponse(msg, username, regionSlug);
         const {
             response: { puuid, id }
-        } = await api.Summoner.getByName(username, Constants.Regions.EU_WEST);
+        } = await api.Summoner.getByName(username, region);
 
         let games = await api.Match.listWithDetails(
             puuid,
-            Constants.RegionGroups.EUROPE,
+            getRegionGroupBySlug(regionSlug),
             { count: process.env.PREFIX === 't!' ? 5 : 20 }
         );
+        console.log(games);
         games = games.filter(
             g => g.info.tft_set_number === 6 && g.info.queue_id === 1100
         );
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
-        let rank = (await api.League.get(id, Constants.Regions.EU_WEST))
-            .response[0];
+        let rank = (await api.League.get(id, region)).response[0];
         if (rank) {
             tier = rank.tier.toLowerCase();
             tier =
@@ -75,7 +81,7 @@ async function getUserStats(msg, username) {
         let damageToPlayersAverage = getAverage(damageToPlayers).toFixed(2);
         let costAverage = getAverage(cost).toFixed(2);
         let totalCostAverage = getAverage(totalCost).toFixed(2);
-        // Placements graph
+
         const placementsGraph = await new ChartJsImage()
             .setConfig({
                 type: 'line',
@@ -161,6 +167,7 @@ async function getUserStats(msg, username) {
                 'https://github.com/Kerberos9/tft-kb',
                 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
             )
+
             .setColor(11167487)
             .addFields([
                 {
@@ -236,7 +243,7 @@ async function getUserStats(msg, username) {
         });
     } catch (e) {
         if (e.status === 404) {
-            return userNotFoundResponse(msg, username);
+            return userNotFoundResponse(msg, username, regionSlug);
         } else if (e.status === 429) {
             return rateLimitResponse(msg, username);
         } else {
@@ -298,10 +305,19 @@ function attachGraphImage(imgUrl) {
     return file;
 }
 
-async function userNotFoundResponse(msg, username) {
-    sendErrorMessage(msg, `User ${username} not found.`);
+async function userNotFoundResponse(msg, username, regionSlug) {
+    sendErrorMessage(
+        msg,
+        `User ${username} not found in region ${regionSlug}.`
+    );
 }
 
+async function regionNotFoundResponse(msg, username, regionSlug) {
+    sendErrorMessage(
+        msg,
+        `Invalid region _${regionSlug}_. Valid regions: euw|eune|tr|na|br|jp|lan|las|oce|ru.`
+    );
+}
 async function userHasNoGamesResponse(msg, username) {
     sendErrorMessage(
         msg,
@@ -318,6 +334,54 @@ async function unknownErrorResponse(msg, username, error) {
     sendErrorMessage(msg, `Unknown error`);
 }
 
+function getRegionBySlug(slug) {
+    switch (slug) {
+        case 'euw':
+            return Constants.Regions.EU_WEST;
+        case 'tr':
+            return Constants.Regions.TURKEY;
+        case 'eune':
+            return Constants.Regions.EU_EAST;
+        case 'na':
+            return Constants.Regions.AMERICA_NORTH;
+        case 'br':
+            return Constants.Regions.BRAZIL;
+        case 'jp':
+            return Constants.Regions.JAPAN;
+        case 'lan':
+            return Constants.Regions.LAT_NORTH;
+        case 'las':
+            return Constants.Regions.LAT_SOUTH;
+        case 'oce':
+            return Constants.Regions.OCEANIA;
+        case 'ru':
+            return Constants.Regions.RUSSIA;
+        case 'kr':
+            return Constants.Regions.KOREA;
+        default:
+            return 'error';
+    }
+}
+function getRegionGroupBySlug(regionSlug) {
+    switch (regionSlug) {
+        case 'euw':
+        case 'ru':
+        case 'eune':
+        case 'tr':
+            return Constants.RegionGroups.EUROPE;
+        case 'jp':
+        case 'kr':
+            return Constants.RegionGroups.ASIA;
+        case 'na':
+        case 'br':
+        case 'lan':
+        case 'las':
+        case 'oce':
+            return Constants.RegionGroups.AMERICAS;
+        default:
+            return 'error';
+    }
+}
 async function sendErrorMessage(msg, message) {
     const embed = new MessageEmbed().setTitle(message);
     await msg.channel.send({
