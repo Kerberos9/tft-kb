@@ -383,6 +383,7 @@ function getRegionGroupBySlug(regionSlug) {
     }
 }
 async function sendErrorMessage(msg, message) {
+    await msg.react('❌');
     const embed = new MessageEmbed().setTitle(message);
     await msg.channel.send({
         embeds: [embed]
