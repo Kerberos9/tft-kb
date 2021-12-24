@@ -32,8 +32,12 @@ async function getUserStats(msg, username, regionSlug) {
         );
 
         if (games.length === 0) return userHasNoGamesResponse(msg, username);
-        let rank = (await api.League.get(id, region)).response[0];
+        let rank = (await api.League.get(id, region)).response.filter(
+            q => q.queueType === 'RANKED_TFT'
+        );
+
         if (rank) {
+            rank = rank[0];
             tier = rank.tier.toLowerCase();
             tier =
                 tier[0].toUpperCase() +
