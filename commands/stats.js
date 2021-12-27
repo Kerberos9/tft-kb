@@ -14,7 +14,6 @@ async function getUserStats(msg, username, regionSlug) {
     try {
         msg.react('✅');
         const region = getRegionBySlug(regionSlug);
-        console.log(region);
         if (region === 'error')
             return regionNotFoundResponse(msg, username, regionSlug);
         const {
@@ -26,7 +25,6 @@ async function getUserStats(msg, username, regionSlug) {
             getRegionGroupBySlug(regionSlug),
             { count: process.env.PREFIX === 't!' ? 5 : 20 }
         );
-        console.log(games);
         games = games.filter(
             g => g.info.tft_set_number === 6 && g.info.queue_id === 1100
         );
@@ -59,11 +57,13 @@ async function getUserStats(msg, username, regionSlug) {
         let damageToPlayers = [];
         let cost = [];
         let totalCost = [];
+        let topFour = 0;
         games.forEach(game => {
             let stats = game.info.participants.filter(
                 g => g.puuid === puuid
             )[0];
             placements.push(stats.placement);
+            if (stats.placement <= 4) topFour++;
             stats.traits.forEach(t => {
                 traits[t.name] = (traits[t.name] || 0) + t.tier_current;
             });
@@ -87,7 +87,7 @@ async function getUserStats(msg, username, regionSlug) {
         let damageToPlayersAverage = getAverage(damageToPlayers).toFixed(2);
         let costAverage = getAverage(cost).toFixed(2);
         let totalCostAverage = getAverage(totalCost).toFixed(2);
-
+        topFour = (topFour / games.length) * 100;
         const placementsGraph = await new ChartJsImage()
             .setConfig({
                 type: 'line',
@@ -228,18 +228,23 @@ async function getUserStats(msg, username, regionSlug) {
                     inline: true
                 },
                 {
-                    name: '**Rank**',
-                    value: tier,
-                    inline: true
-                },
-                {
                     name: '**Average Placement**',
                     value: `${placementsAverage} ${
                         placementsAverage >= 4.5
                             ? '<:Sadge:825386882603024395>'
                             : '<:Pog:648630351874359298>'
                     }`,
-                    inline: false
+                    inline: true
+                },
+                {
+                    name: '**Top4 %**',
+                    value: `${Math.floor(topFour)}%`,
+                    inline: true
+                },
+                {
+                    name: '**Rank**',
+                    value: tier,
+                    inline: true
                 }
             ]);
 
