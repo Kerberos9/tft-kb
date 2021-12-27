@@ -37,7 +37,6 @@ async function getUserStats(msg, username, regionSlug) {
         );
 
         if (rank) {
-            console.log(rank[0]);
             rank = rank[0];
             tier = rank.tier.toLowerCase();
             tier =
