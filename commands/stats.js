@@ -37,12 +37,15 @@ async function getUserStats(msg, username, regionSlug) {
         );
 
         if (rank) {
+            console.log(rank[0]);
             rank = rank[0];
             tier = rank.tier.toLowerCase();
             tier =
                 tier[0].toUpperCase() +
                 tier.slice(1) +
-                ` ${rank.rank} ${rank.hotStreak ? ':fire::fire::fire:' : ''}`;
+                ` ${rank.rank} ${rank.leaguePoints} LP ${
+                    rank.hotStreak ? ':fire::fire::fire:' : ''
+                }`;
         } else {
             tier = 'Not ranked yet';
         }
