@@ -23,7 +23,7 @@ async function getUserStats(msg, username, regionSlug) {
         let games = await api.Match.listWithDetails(
             puuid,
             getRegionGroupBySlug(regionSlug),
-            { count: process.env.PREFIX === 't!' ? 5 : 20 }
+            { count: process.env.BOT_PREFIX === 't!' ? 5 : 20 }
         );
         games = games.filter(
             g => g.info.tft_set_number === 6 && g.info.queue_id === 1100
@@ -165,7 +165,7 @@ async function getUserStats(msg, username, regionSlug) {
         const embed = new MessageEmbed()
             .setTitle(
                 `${
-                    process.env.PREFIX === 'tft!' ? '' : '**TEST** '
+                    process.env.BOT_PREFIX === 'tft!' ? '' : '**TEST** '
                 }TFT Stats for ${username}`
             )
             .setImage('attachment://chart.jpeg')

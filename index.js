@@ -5,7 +5,7 @@ require('dotenv').config();
 const bot = new Client({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
 });
-const prefix = process.env.PREFIX;
+const prefix = process.env.BOT_PREFIX;
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}`);

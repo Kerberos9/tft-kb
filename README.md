@@ -8,7 +8,7 @@ Required variables:
 ```
 TOKEN=<Discord Bot Token>
 RIOT_API_KEY=<API Key of your Riot APP>
-PREFIX=<The prefix you want for your bot>
+BOT_PREFIX=<The prefix you want for your bot>
 ```
 
 If the prefix is `t!`, the bot will run in test mode.
