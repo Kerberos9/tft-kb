@@ -1,10 +1,5 @@
 const { TftApi, Constants } = require('twisted');
-const {
-    Client,
-    Intents,
-    MessageEmbed,
-    MessageAttachment
-} = require('discord.js');
+const { MessageEmbed, MessageAttachment } = require('discord.js');
 const itemsData = require('./items.json');
 const ChartJsImage = require('chartjs-to-image');
 require('dotenv').config();
@@ -33,7 +28,7 @@ async function getUserStats(msg, username, regionSlug) {
         let rank = (await api.League.get(id, region)).response.filter(
             q => q.queueType === 'RANKED_TFT'
         );
-
+        let tier = '';
         if (rank) {
             rank = rank[0];
             tier = rank.tier.toLowerCase();
@@ -248,7 +243,7 @@ async function getUserStats(msg, username, regionSlug) {
                 }
             ]);
 
-        let message = await msg.channel.send({
+        await msg.channel.send({
             embeds: [embed],
             files: [graphImage]
         });
@@ -256,7 +251,7 @@ async function getUserStats(msg, username, regionSlug) {
         if (e.status === 404) {
             return userNotFoundResponse(msg, username, regionSlug);
         } else if (e.status === 429) {
-            return rateLimitResponse(msg, username);
+            return rateLimitResponse(msg);
         } else {
             return unknownErrorResponse(msg, username, e);
         }
@@ -336,7 +331,7 @@ async function userHasNoGamesResponse(msg, username) {
     );
 }
 
-async function rateLimitResponse(msg, username) {
+async function rateLimitResponse(msg) {
     sendErrorMessage(msg, `Too many requests, wait a bit.`);
 }
 
@@ -400,5 +395,5 @@ async function sendErrorMessage(msg, message) {
         embeds: [embed]
     });
 }
-getAverage = data => data.reduce((a, b) => a + b, 0) / data.length;
+const getAverage = data => data.reduce((a, b) => a + b, 0) / data.length;
 module.exports = getUserStats;
