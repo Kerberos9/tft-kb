@@ -1,5 +1,5 @@
 const { Client, Intents } = require('discord.js');
-
+const keepAlive = require('./server');
 const getUserStats = require('./commands/stats.js');
 require('dotenv').config();
 const bot = new Client({
@@ -22,5 +22,5 @@ bot.on('messageCreate', async msg => {
     console.log(`Message received!: ${msg.content}\nUsername: ${username}\nRegion: ${region}
     `);
 });
-
+keepAlive();
 bot.login(process.env.TOKEN);
