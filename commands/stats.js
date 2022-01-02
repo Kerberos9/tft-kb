@@ -65,7 +65,7 @@ async function getUserStats(msg, username, regionSlug) {
             let totalUnitCost = 0;
             stats.units.forEach(u => {
                 u.items.forEach(i => (items[i] = (items[i] || 0) + 1));
-                units[u.character_id] = (units[u.character_id] || 0) + 1;
+                units[u.character_id] = (units[u.character_id] || 0) + u.tier;
                 cost.push(u.rarity + 1);
                 totalUnitCost += u.rarity + 1;
             });
